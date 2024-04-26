@@ -34,7 +34,7 @@ for (let i = 0; i < nums.length - 2; i++) {
         if (nums[i] + nums[poL] + nums[poR] === 0) { // Situation 2: if sum of all 3 numbers is equal to 0, then store triplet into the array(lst)
             lst.push([nums[i],nums[poL],nums[poR]])
             while (nums[poL] === nums[poL+1]) {poL++} // while the value for next left pointer is equal to current one, increase left pointer index by 1. To skip the same number again
-            while (nums[poR] === nums[poR+1]) {poR--} // while the value for previous right pointer is equal to current one, decrease right pointer index by 1. To skip the same number again
+            while (nums[poR] === nums[poR-1]) {poR--} // while the value for previous right pointer is equal to current one, decrease right pointer index by 1. To skip the same number again
             poL++
             poR--
         }
