@@ -37,11 +37,11 @@ l1 = [1,2,3,4]
 
     let carry = 0 // if value exceed mmoe than 9 we will store its tenth place value to this variable, initially its value is set to 0
     
-    let initial = new ListNode(0) // initiating a variable from ListNode class; a class to define a node
+    let initial = new ListNode(0) // initiating a head node variable from ListNode class; here we defining the head node as initial (initial.next will refer to the required resultant linked list (curr))
     
     let curr = initial // making another instance of the node class object variable (initial), to store values of resultant link list
 
-    while(l1 || l2 ) { // while we have value for l1 and l2 this loop will run
+    while(l1 || l2 ) { // while we have a value avaialble for l1 and l2, this loop will run
 
         const sum = (l1 ? l1.val : 0) + (l2 ? l2.val : 0) + carry // current value of l1 + current value of l2 + current value of carry is equal to the sum 
         /**
