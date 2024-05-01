@@ -14,6 +14,7 @@ let max = 0 // storing the maximum length
 let resultantStr = ""; // (optional) to store the desired longest sub-string
 
 for (let endPoint = 0; endPoint < s.length; endPoint++) { // starting the end pointer
+    
     if (!cnt.get(s[endPoint])) { cnt.set(s[endPoint], 1) } // If the current letter doesn't exist in Map, add current letter inside the Map with count as 1 --> {e:1} at s[0] 
     else { cnt.set(s[endPoint], cnt.get(s[endPoint]) + 1) } // if current letter exists, increase the count of existing value by 1
 
